@@ -654,6 +654,11 @@ footer {
   margin-left: calc(-1 * (100vw - 100%)/2);
 }
 
+.contact-info i {
+  color: #ff5a8a; 
+  
+}
+
 .contact-section h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
@@ -680,7 +685,7 @@ footer {
 .contact-form h3 {
   margin-bottom: 20px;
   font-size: 1.8rem;
-  color: #ff5a8a;
+  color: whitesmoke;
 }
 
 .contact-form input, .contact-form textarea {
@@ -714,7 +719,7 @@ footer {
 }
 
 .contact-info a {
-  color: #ff5a8a;
+  color: whitesmoke;
   text-decoration: none;
 }
 
@@ -724,6 +729,7 @@ footer {
   border-radius: 12px;
   text-align: center;
   margin-top: 30px;
+  flex: 0 0 auto;
 }
 
 .hire-me h3 {
