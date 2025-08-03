@@ -1,41 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Hibaq's Portfolio</title>
-    <link rel="stylesheet" href="Styles.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hibby’s Portfolio</title>
+  <link rel="stylesheet" href="Styles.css" />
 </head>
-<header>
-    <nav>
-        <h1>Hibaq Adan</h1>
-        <ul>
-            <li><a href="about">About</a></li>
-            <li><a href="skills">Languages</a></li>
-            <li><a href="education">Education</a></li>
-            <li><a href="interests">Intrests</a></li>
-            <li><a href="projects">Projects</a></li>
-            <li><a href="contacts">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<section id="about">
-    <p>Hello, I am Hibaq Adan, an enthusiastic developer passionate about building meaningful, people first digital experiences. I thrive at the intersection of creativity, logic, and community impact.</p>
-</section>
-
-<section id="skills">
-    <h2>Programming Languages</h2>
-    <ul>
-        <li>Html & css</li>
-        <li>Javascript</li>
-        <li>Python</li>
-        <li>Sql</li>
-    </ul>
-</section>
-<section id="education">
-    <h2>Education Background</h2>
-</section>
 <body>
-    
+
+  <!--  Background Video -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="Assets/Background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+ 
+  <div class="overlay">
+
+    <header>
+      <nav>
+        <h1>Hibby</h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Languages</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="Assets/profile.jpg" alt="Photo of Hibby" class="profile-pic" />
+        <p>
+          I'm Hibby, an enthusiastic developer passionate about building meaningful, people-first digital experiences. I thrive at the intersection of creativity, logic, and community impact.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>VB.NET</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education Background</h2>
+      <p>BSc in Information Technology - KCA University</p>
+      <p>Full Stack Development - Moringa School</p>
+      <a href="Assets/Hibaq's Resume.pdf" download class="btn">Download CV</a>
+    </section>
+
+    <section id="interests">
+      <h2>Interests</h2>
+      <p>
+        I'm fascinated by human-centered design, edtech, data systems, and tools that drive inclusion. I love working on projects that spark social change or empower underrepresented communities.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>EduLink</h3>
+        <p>A modern school platform for student enrollment and application tracking.</p>
+        <a href="https://github.com/your-username/edulink" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Under The Starlit Flame</h3>
+        <p>Camping adventure website with dynamic services and booking features.</p>
+        <a href="https://github.com/your-username/starlit-flame" target="_blank">View on GitHub</a>
+      </div>
+     
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/your-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Hibby. Built with 💜 in HTML & CSS.</p>
+    </footer>
+
+  </div> 
+
 </body>
 </html>
