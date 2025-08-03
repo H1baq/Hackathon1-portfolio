@@ -471,3 +471,128 @@ footer {
 .read-more:hover {
   text-decoration: underline;
 }
+
+/* === EDUCATION SECTION === */
+#education {
+  padding: 50px 5%;
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+}
+
+#education h2 {
+  color: #e9c9ff;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+  font-weight: 800;
+}
+
+/* Timeline Container */
+.timeline {
+  position: relative;
+  margin: 0 auto 30px auto;
+  max-width: 800px;
+  padding-left: 40px; /* More space for dates */
+  border-left: 3px solid #ff5a8a;
+}
+
+/* Timeline Item */
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 40px; /* Space for icon */
+}
+
+
+
+/* Timeline Date */
+.timeline-date {
+  font-size: 1rem;
+  color: #ffb3d6;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* Timeline Content */
+.timeline-content h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+.timeline-content p {
+  color: #f0e9ff;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+  margin-bottom: 5px;
+}
+
+/* CV Button Centered */
+#education .btn {
+  display: block;
+  width: max-content;
+  margin: 20px auto 0;
+}
+
+/* === INTERESTS SECTION === */
+#interests {
+  padding: 60px 5%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#interests h2 {
+  color: #e9c9ff;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+  font-weight: 800;
+}
+
+.interests-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.interest-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.interest-card i {
+  font-size: 2rem;
+  color: #ff5a8a;
+  margin-bottom: 15px;
+}
+
+.interest-card h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.interest-card p {
+  font-size: 0.95rem;
+  color: #f0e9ff;
+  line-height: 1.5;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+/* Hover effect */
+.interest-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
