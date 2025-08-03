@@ -472,7 +472,7 @@ footer {
   text-decoration: underline;
 }
 
-/* === EDUCATION SECTION === */
+/* EDUCATION SECTION */
 #education {
   padding: 50px 5%;
   color: white;
@@ -493,7 +493,7 @@ footer {
   position: relative;
   margin: 0 auto 30px auto;
   max-width: 800px;
-  padding-left: 40px; /* More space for dates */
+  padding-left: 40px; 
   border-left: 3px solid #ff5a8a;
 }
 
@@ -501,7 +501,7 @@ footer {
 .timeline-item {
   margin-bottom: 30px;
   position: relative;
-  padding-left: 40px; /* Space for icon */
+  padding-left: 40px; 
 }
 
 
@@ -531,14 +531,14 @@ footer {
   margin-bottom: 5px;
 }
 
-/* CV Button Centered */
+
 #education .btn {
   display: block;
   width: max-content;
   margin: 20px auto 0;
 }
 
-/* === INTERESTS SECTION === */
+/* INTERESTS SECTION  */
 #interests {
   padding: 60px 5%;
   color: white;
@@ -595,4 +595,88 @@ footer {
 .interest-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* PROJECTS SECTION */
+#projects {
+  padding: 60px 5%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #e9c9ff;
+  font-weight: 800;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin: 15px 0 10px;
+  color: white;
+  font-weight: 700;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #f0e9ff;
+  padding: 0 15px 15px;
+  flex-grow: 1;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.project-links .btn {
+  background-color: #ff5a8a;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.project-links .btn:hover {
+  background-color: #ff2d6d;
+  transform: translateY(-3px);
+}
+
+/* Hover Card Lift */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
