@@ -33,12 +33,17 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* HEADER */
+
+
+/* NAVBAR */
 header {
-  background-color: rgba(122, 46, 157, 0.8);
-  padding: 20px;
-  color: white;
-}
+  background-color: rgba(0, 0, 0, 0.4); 
+  padding: 12px 5%;                     
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);          
 
 nav {
   display: flex;
@@ -46,17 +51,81 @@ nav {
   align-items: center;
 }
 
+nav h1 {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
+  transition: max-height 0.3s ease-out;
 }
 
 nav a {
-  color: white;
+  color: #f0e9ff;
   text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
 }
 
+/* Hover underline effect */
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ff5a8a; 
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Active link style */
+nav a.active {
+  color: #ff5a8a;
+  font-weight: 700;
+}
+
+/* === Hamburger Menu === */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* === Mobile Styles === */
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 0 0 0 10px;
+  }
+
+  nav ul.open {
+    max-height: 300px; /* Slide down menu */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
 /* SECTIONS */
 section {
   padding: 40px 0;

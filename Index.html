@@ -17,20 +17,25 @@
  
   <div class="overlay">
 
-    <header>
-      <nav>
-        <h1>Hibaq Adan</h1>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Languages</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#interests">Interests</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+   <header>
+  <nav>
+    <h1>Hibby</h1>
 
+    <!-- Hamburger Menu Icon -->
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+
+    <ul id="nav-links">
+      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#skills">Languages</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
    <section id="about" class="about-section">
   <div class="about-text">
     <h2>Your Personality is What Makes You Unique</h2>
@@ -102,6 +107,36 @@
     </footer>
 
   </div> 
+<script>
+  // Toggle mobile menu
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+  
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
 
+  // Highlight active link on scroll
+  const sections = document.querySelectorAll("section");
+  const links = document.querySelectorAll("nav ul li a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 100;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    links.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").includes(current)) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
 </body>
 </html>
