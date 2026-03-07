@@ -260,6 +260,7 @@ footer {
 }
 
 
+
 .skills-intro {
   color: #f0e9ff;
   font-size: 1rem;
@@ -269,7 +270,52 @@ footer {
   margin-right: auto;
 }
 
+/* ===== DevOps Skills Section ===== */
+.skills-section.devops {
+  margin-top: 40px; /* spacing from previous section */
+}
 
+/* Title for DevOps section */
+.skills-section.devops .tools-title {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #ff5a8a;
+  text-align: center;
+}
+
+/* DevOps grid uses same skills-grid */
+.skills-section.devops .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Skill cards inherit general .skill-card styling */
+.skills-section.devops .skill-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.skills-section.devops .skill-card h3 {
+  color: #ff5a8a;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.skills-section.devops .skill-card p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* Hover effect */
+.skills-section.devops .skill-card:hover {
+  background-color: rgba(255, 90, 138, 0.2);
+  transform: translateY(-5px);
+}
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
